@@ -1,0 +1,78 @@
+.body {
+  font-size: 18px;
+  font-family: $montserat;
+  line-height: 1.5;
+  color: $dark-700;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 600;
+  font-family: $stix;
+  padding: 17.5px 32px;
+  color: $beige-700;
+  border: 1px solid $beige-700;
+  background-color: rgba($beige-700, 0.25);
+  position: relative;
+  width: 251px;
+  height: 60px;
+
+  &::after,
+  &::before {
+    position: absolute;
+    background-color: $beige-700;
+    width: 241px;
+    height: 1px;
+    z-index: 100;
+    content: "";
+    left: 4px;
+  }
+
+  &::after {
+    top: -5px;
+  }
+
+  &::before {
+    bottom: -5px;
+  }
+
+  &__decoratation-bottomLeft,
+  &__decoratation-topLeft,
+  &__decoratation-topRight,
+  &__decoratation-bottomRight {
+    position: absolute;
+    background-color: $beige-700;
+    width: 1px;
+    height: 4px;
+    content: "";
+  }
+
+  &__decoratation-bottomLeft {
+    position: absolute;
+    background-color: $beige-700;
+    bottom: -5px;
+    left: 3px;
+  }
+  &__decoratation-topLeft {
+    top: -5px;
+    left: 3px;
+  }
+
+  &__decoratation-topRight {
+    top: -5px;
+    right: 3px;
+  }
+
+  &__decoratation-bottomRight {
+    bottom: -5px;
+    right: 3px;
+  }
+}

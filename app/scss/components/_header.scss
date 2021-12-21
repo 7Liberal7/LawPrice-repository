@@ -1,0 +1,40 @@
+.header {
+  font-weight: 400;
+  padding-top: 50px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__phone {
+    margin-right: 35px;
+  }
+
+  &__phone-link {
+    margin-bottom: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: $stix;
+    color: $grey-100;
+  }
+
+  &__phone-text {
+    color: $grey-500;
+    font-size: 14px;
+  }
+
+  &__consultation-link {
+    padding: 17px 32px;
+    font-size: 20px;
+    line-height: 1.25;
+    color: $beige-700;
+    border: 1px solid $beige-700;
+    font-family: $stix;
+    font-weight: 600;
+  }
+}
